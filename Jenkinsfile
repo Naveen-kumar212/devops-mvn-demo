@@ -14,17 +14,17 @@ pipeline{
         }
         stage('mvn clean'){
             steps{
-               sh 'mvn clean'
+                'mvn clean'
             }
         }
         stage('mvn compile'){
             steps{
-               sh 'mvn compile'
+                'mvn compile'
             }
         }
         stage('mvn package'){
             steps{
-               sh 'mvn package'
+                'mvn package'
             }
         }
     }
