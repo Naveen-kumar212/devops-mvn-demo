@@ -6,6 +6,9 @@ pipeline{
          jdk 'java'
     }
 */
+    environment {
+        PATH = "/usr/share/man/man1/mvn.1.gz:$PATH"
+    }
     stages{
         stage('Git Checkout'){
             steps{
