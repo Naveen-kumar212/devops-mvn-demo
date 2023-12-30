@@ -7,7 +7,7 @@ pipeline{
     }
 */
     environment {
-        PATH = "/usr/bin/mvn:$PATH"
+        PATH = "/usr/share/maven/bin#:$PATH"
     }
     stages{
         stage('Git Checkout'){
